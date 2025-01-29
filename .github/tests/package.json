@@ -1,0 +1,31 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test && cd ../../ && node .github/tests/additional_lint.js",
+    "lint": "concurrently --raw -G -- pnpm:lint:*",
+    "lint:eslint": "cd ../../ && eslint -c .github/tests/eslint.config.js",
+    "lint:stylelint": "stylelint ../../*.css",
+    "start": "serve ../../ -l 3000 --no-port-switching"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@html-eslint/eslint-plugin": "^0.27.0",
+    "@html-eslint/parser": "^0.27.0",
+    "@playwright/test": "^1.48.2",
+    "@types/node": "^22.8.1",
+    "concurrently": "^9.0.1",
+    "es-html-parser": "^0.0.9",
+    "eslint": "^9.11.1",
+    "serve": "^14.2.4",
+    "stylelint": "^16.10.0",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-no-unsupported-browser-features": "^8.0.1",
+    "stylelint-selector-bem-pattern": "^4.0.1"
+  }
+}

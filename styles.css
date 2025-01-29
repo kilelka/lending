@@ -1,0 +1,1324 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+}
+
+html {
+    width: 1440px;
+    background-color: #F6F7F9;
+}
+
+header {
+    background-color: black;
+    position: relative;
+    width: 1424px;
+    height: 624px;
+    margin: 8px 8px 40px;
+    border-radius: 24px;
+}
+
+.firstLineHead{
+    width: 1240px;
+    position: absolute;
+    margin: 0 92px;
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #212121;
+    text-align: center;
+}
+
+.buttonHead{
+    position: relative;
+    display: flex;
+    align-items: center; 
+}
+
+.buttonEntrance {
+    display: flex;
+    align-items: center;
+    padding: 11px 16px 13px;
+    background-color: #212121;
+    color: white;
+    font-size: 17px;
+    margin-right: 8px;
+    border-radius: 10px;
+    border: none;
+    width: 102px;
+    height: 48px;
+    text-align: center;
+}
+
+.buttonImg{
+    margin-right: 8px;
+}
+
+.buttonRegistration {
+    display: flex;
+    align-items: center;
+    width: 141px;
+    height: 48px;
+    padding: 11px 16px 13px;
+    background-color: #07F;
+    color: white;
+    font-size: 17px;
+    margin: 0;
+    border-radius: 12px;
+    border: none;
+}
+
+.secondHead {
+    position: absolute;
+    display: flex;
+    margin-top: 96px;
+    margin-left: 92px;
+    margin-right: 100px;
+    justify-content: space-between;
+}
+
+.mainTextHead {
+    margin: 68px 0;
+    width: 614px;
+    height: 392px;
+}
+
+.mainTextHead h1 {
+    position: relative;
+    font-size: 80px;
+    color: white;
+    margin-bottom: 32px;
+}
+
+.mainTextHead p {
+    position: relative;
+    font-size: 28px;
+    color: #E3E8F2;
+    margin-bottom: 80px;
+    line-height: 36.4px;
+}
+
+.imgCube {
+    margin-top: 68px;
+    margin-bottom: 68px;
+    margin-left: 166px;
+}
+
+.mainTextHead button {
+    width: 212px;
+    height: 56px;
+    padding: 12px 24px 14px;
+    border-radius: 12px;
+    background-color: #07F;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    border: none;
+}
+
+#migration {
+    position: relative;
+    margin: 0 174px;
+    height: 564px;
+}
+
+.textMigration {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 46px;
+}
+
+.headingMigration {
+    width: 566px;
+    height: 114px;
+    margin-right: 94px;
+}
+
+.headingMigration h2 {
+    font-size: 52px;
+    line-height: 57.2px;
+    text-align: left;
+    color: #212121;
+}
+
+.text {
+    width: 432px;
+    height: 120px;
+}
+
+.text p {
+    font-size: 17px;
+    line-height: 23.8px;
+    text-align: left;
+    color: #000;
+}
+
+.cardMigration {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 404px;
+    border-radius: 24px;
+}
+
+.infoMigration {
+    margin-left: 36px;
+}
+
+.advantages {
+    position: relative;
+    margin: 36px 217px 24px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.point {
+    display: flex;
+    align-items: center;
+    padding: 6px 8px;
+    margin-right: 8px;
+    border-radius: 8px;
+    background-color: #F6F7F9;
+}
+
+.pointLast {
+    margin-right: 0;
+}
+
+.point p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23.8px;
+    text-align: left;
+}
+
+.list p {
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 36.4px;
+    text-align: left;
+}
+
+.list ul {
+    position: relative;
+    margin: 0 36px 0 18px;
+    padding: 0;
+
+}
+
+.list ul li::marker {
+    color: black;
+
+}
+
+.list li {
+    position: relative;
+    margin-bottom: 8px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23.8px;
+    text-align: left;
+    color: #7C8A9A;
+}
+
+.twoButton {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 4px;
+}
+
+.applicationButton {
+    background-color: #07F;
+    width: 213px;
+    height: 56px;
+    padding: 12px 24px 14px;
+    margin-right: 8px;
+    border-radius: 12px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    border: none;
+    color: #FFF;
+}
+
+.conditionsButton {
+    background-color: #F6F7F9;
+    color: #212121;
+    width: 275px;
+    height: 56px;
+    padding: 12px 24px 14px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    border: none;
+}
+
+.illustrationMigration {
+    display: flex;
+    border-radius: 16px;
+    padding: 8px;
+}
+
+#products {
+    position:relative;
+    margin: 160px 64px;
+    height: 476px;
+}
+
+.mainProducts {
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headingProducts {
+    width: 616px;
+    height: 84px;
+    margin-right: 8px;
+}
+
+.hedingTextProducts {
+    width: 616px;
+    height: 84px;
+}
+
+.headingProducts h2 {
+    font-size: 52px;
+    line-height: 57.2px;
+    text-align: left;
+    color: #212121;
+}
+
+.hedingTextProducts p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #7C8A9A;
+}
+
+.cardProducts {
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    margin-top: 64px;
+    width: 1312px;
+}
+
+.firstCardProducts {
+    display: flex;
+    background-color: #FFF;
+    width: 652px;
+    height: 264px;
+    border-radius: 24px;
+    margin-right: 8px;
+}
+
+.imgFirstCardProducts {
+    padding: 8px;
+    border-radius: 16px;
+    margin-right: 36px;
+}
+
+
+.infoFirstCardProducts {
+    padding-top: 36px;
+}
+
+.headingFirstCardProducts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headingFirstCardProducts p {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+    width: 300px;
+}
+
+.textFirstCardProducts {
+    padding-top: 12px;
+}
+
+.textFirstCardProducts p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23.8px;
+    text-align: left;
+    color: #7C8A9A;
+}
+
+.secondCardProducts {
+    background-color: #FFF;
+    width: 322px;
+    height: 264px;
+    border-radius: 24px;
+    margin-right: 8px;
+    padding: 36px;
+}
+
+.headingSecondCardProducts, .headingThirdCardProducts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headingSecondCardProducts p, .headingThirdCardProducts p {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+}
+
+.mob {
+    display: none;
+}
+
+.textSecondCardProducts, .textThirdCardProducts {
+    padding-top: 12px;
+}
+
+.textSecondCardProducts p, .textThirdCardProducts p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23.8px;
+    text-align: left;
+    color: #7C8A9A;
+}
+
+.thirdCardProducts {
+    background-color: #FFF;
+    width: 322px;
+    height: 264px;
+    border-radius: 24px;
+    padding: 36px 36px 0;
+}
+
+.showMoreProducts {
+    margin-top: 8px;
+}
+
+.ShowMore {
+    width: 1312px;
+    height: 56px;
+    padding: 12px 24px 14px;
+    border-radius: 12px;
+    border: none;
+    background-color: #FFF;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #07F;
+}
+
+#reliability {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    margin: 160px 100px 120px;
+    height: 571px;
+}
+
+.cardReliability {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.headingReliability {
+    margin-bottom: 64px;
+}
+
+.headingReliability h2 {
+    font-size: 52px;
+    line-height: 57.2px;
+    text-align: center;
+    color: #212121;
+}
+
+.firstCardReliability {
+    display: flex;
+    flex-flow: column;
+    margin-right: 8px;
+    width: 396px;
+    height: 344px;
+}
+
+.secondCardReliability {
+    display: flex;
+    flex-flow: column;
+    margin-right: 8px;
+    width: 432px;
+    height: 344px;
+}
+
+.thirdCardReliability {
+    display: flex;
+    flex-flow: column;
+    width: 396px;
+    height: 344px;
+    margin-right: 0;
+}
+
+.firstCardReliabilityFirst {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    background-color: #FFF;
+    padding: 8px;
+    border-radius: 24px;
+    margin-bottom: 8px;
+    height: 168px;
+}
+
+.firstCardReliabilityFirst p {
+    margin-left: 16px;
+    font-size: 24px;
+    line-height: 33.6px;
+    text-align: left;
+}
+
+.firstCardReliabilitySecond, .secondCardReliabilityFirst, .secondCardReliabilitySecond {
+    display: flex;
+    align-items: center;
+    background-color: #FFF;
+    border-radius: 24px;
+    padding: 16px;
+    margin-bottom: 8px;
+    height: 80px;
+}
+
+.firstCardReliabilitySecond p, .firstCardReliabilityThird p,.secondCardReliabilityFirst p, .secondCardReliabilitySecond p {
+    color: #212121;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23.8px;
+    text-align: left;
+    margin-left: 12px;
+}
+
+.firstCardReliabilityThird {
+    margin-bottom: 0;
+}
+
+.firstCardReliabilitySecond img, .firstCardReliabilityThird img, .secondCardReliabilityFirst img, .secondCardReliabilitySecond img {
+    background-color: #F6F7F9;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+.secondCardReliabilityThird {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card1, .card2 {
+    background-color: #FFF;
+    border-radius: 24px;
+    padding: 24px;
+    margin-right: 8px;
+    height: 168px;
+}
+
+.card2 {
+    margin-right: 0;
+}
+
+.headingThird {
+    width: 164px;
+    height: 60px;
+    margin-bottom: 12px;
+}
+
+.headingThird p {
+    font-size: 28px;
+    line-height: 36.4px;
+    text-align: left;
+}
+
+.headingT {
+    width: 146px;
+    height: 36px;
+}
+
+.headingTh {
+    width: 332px;
+    height: 60px;
+}
+
+.texThird p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23.8px;
+    text-align: left;
+    color: #7C8A9A;
+}
+
+.thirdCardReliabilityFirst {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card3 {
+    margin-top: 8px;
+}
+
+.sizeCard {
+    width: 194px;
+    height: 168px;
+}
+
+.imgProuct {
+    border: 1px solid #E3E8F2;
+    width: 60px;
+    height: 60px;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.testing {
+    margin: 0 513.5px 0 514.5px;
+    width: 212px;
+    height: 56px;
+    padding: 12px 24px 14px;
+    border-radius: 12px;
+    background-color:#07F;
+    border: none;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.running_string {
+    background-color: #07F;
+    margin-bottom: 36px;
+}
+
+/* Контейнер для бегущей строки */
+.marquee {
+    width: 100%; /* Ширина контейнера */
+    overflow: hidden; /* Скрываем элементы, выходящие за пределы */
+    position: relative;
+    white-space: nowrap; /* Запрещаем перенос текста */
+}
+
+/* Контент строки (текст + изображение) */
+.marquee-content {
+    display: inline-flex; /* Размещаем текст и изображение в ряд */
+    align-items: center; /* Выравнивание текста и изображения */
+    gap: 32px; /* Расстояние между текстом и изображением */
+    animation: marquee 20s linear infinite; /* Анимация движения */
+    font-size: 32px;
+    line-height: 35.2px;
+    text-align: left;
+    color: #FFF;
+    white-space: nowrap; /* Запрещаем перенос строки */
+}
+
+/* Изображение */
+.marquee-content img {
+    height: 72px; /* Высота изображения */
+    width: auto; /* Сохранение пропорций */
+}
+
+/* Анимация движения */
+@keyframes marquee {
+    0% {
+        transform: translateX(0); /* Начало движения */
+    }
+    
+    100% {
+        transform: translateX(-100%); /* Перемещение на 100% влево, чтобы скрыть содержимое */
+    }
+}
+
+footer {
+    position: relative;;
+    width: 1368px;
+    height: 486px;
+    margin: 0 32px 36px;
+    border-radius: 24px;
+    background-color: #FFF;
+}
+
+.mainFooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 64px;
+    align-items: center;
+}
+
+.menuFooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0 20px;
+    margin: 0 64px;
+    border-top: 1px solid #E3E8F2;
+    border-bottom: 1px solid #E3E8F2;
+}
+
+.hr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 64px;
+}
+
+.footerFooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 64px 34px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25.5px;
+    text-align: left;
+    color: #7C8A9A;
+}
+
+.giftbtn {
+    display: flex;
+    width: 255px;
+    height: 48px;
+    padding: 11px 16px 13px;
+    gap: 8px;
+    border-radius: 12px;
+    background-color: #F6F7F9;
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23.8px;
+    text-align: center;
+    color: #212121;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+}
+
+.menuFooter p {
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.menuFooter a {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25.5px;
+    text-align: left;
+    color: inherit; 
+    margin-bottom: 12px;
+    text-decoration: none;
+}
+
+.menuFooter div {
+    display: flex;
+    flex-direction: column;
+}
+
+.iconfooter {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.iconfooter a {
+    margin-left: 24px;
+}
+
+.icontext {
+    display: flex;
+    align-items: center;
+}
+
+.icontext img {
+    margin-right: 8px;
+}
+
+.icon2, .buttonEntrance2, .buttonRegistration2, .blue {
+    display: none;
+}
+
+.buttonRegistration:hover, .mainTextHead button:hover, .applicationButton:hover, .testing:hover {
+    background-color: #006BE6;
+    cursor:pointer;
+}
+
+.buttonEntrance:hover {
+    background-color: #19191a;
+    cursor:pointer;
+}
+
+.conditionsButton:hover {
+    color: #0277FF;
+    outline:1px solid #0277FF;
+    background-color: #F3F4F6;
+    cursor:pointer;
+}
+
+.giftbtn:hover {
+    color: #0277FF;
+    outline:1px solid #0277FF;
+    background-color: #F3F4F6;
+    cursor:pointer;
+
+}
+
+.ShowMore:hover {
+    outline: 1px solid #0277FF;
+    cursor:pointer;
+}
+
+.menuFooter a:hover {
+    color: #0277FF;
+}
+
+.container {
+    perspective: 1000px; /* Создание 3D-пространства */
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.flip-card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out; /* Плавная анимация */
+    transform: rotateY(0deg); /* Начальное положение */
+}
+
+.container:hover .flip-card {
+    transform: rotateY(180deg); /* Поворот на 180 градусов */
+}
+
+/* Лицевая сторона */
+.default, .hover, .hover1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Скрытие задней стороны */
+}
+
+/* Стили для .hover */
+.hover {
+    background-color: #FFF;
+    transform: rotateY(180deg); /* Поворот задней стороны */
+    border-radius: 24px;
+    margin-bottom: 8px;
+    height: 168px;
+    padding: 8px;
+}
+
+.hover1 {
+    background-color: #FFF;
+    transform: rotateY(180deg); /* Поворот задней стороны */
+    border-radius: 24px;
+    margin-bottom: 8px;
+    height: 168px;
+    padding: 8px;
+}
+
+.hover2 {
+    margin-top: 8px;
+}
+
+.bgGray1 {
+    display: flex;
+    width: 380px;
+    height: 152px;
+    border-radius: 16px;
+    background-color: #F6F7F9;
+}
+
+.iconHover1, .iconHover {
+    margin: 16px 12px 88px 16px;
+}
+
+.textHover1, .textHover {
+    margin: 16px 5px 10px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
+
+.pointHover1, .pointHover {
+    margin-top: 10px;
+}
+
+.bgGray {
+    display: flex;
+    width: 416px;
+    height: 152px;
+    border-radius: 16px;
+    background-color: #F6F7F9;
+}
+
+.pointHover p, .pointHover1 p  {
+    display: inline-block;
+    border: 0.8px solid #E3E8F2;
+    border-radius: 6px;
+    color: #7C8A9A;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    padding: 6px;
+}
+
+@media (max-width: 376px) {
+    html {
+        width: 376px;
+    }
+    
+    header {
+        width: 360px;
+        height: 734px;
+        margin-bottom: 48px;
+        border-radius: 20px;
+    }
+
+    .firstLineHead{
+        width: 360px;
+        margin: 0;
+        padding: 36px 28px 28px;
+        border-bottom: 0;
+    }
+
+    .icon, .buttonEntrance, .buttonRegistration, #reliability {
+        display: none;
+    }
+
+    .icon2 {
+        display: block;
+    }
+
+    .buttonEntrance2, .buttonRegistration2 {
+        display: inline;
+        color: #FFF;
+        border: none;
+        background-color: black;
+        padding: 0;
+    } 
+
+    .buttonEntrance2 {
+        padding-right: 4px;
+    }
+
+    .buttonRegistration2 {
+        padding-left: 4px;
+    }
+
+    .buttonHead p {
+        color: #FFF;
+    }
+
+    .secondHead {
+        flex-direction: column;
+        margin: 104px 28px 28px;
+    }
+
+    .mainTextHead {
+        width: 304px;
+        height: 222px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .mainTextHead h1 {
+        margin-top: 28px;
+        font-size: 44px;
+        margin-bottom: 20px;
+        line-height: 44px;
+    }
+
+    .mainTextHead p {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 32px;
+    }
+
+    .imgCube img {
+        width: 304px;
+        height: 260px;
+    }
+
+    .imgCube {
+        margin: 0;
+        margin-top: 120px;
+    }
+
+    .mainTextHead button {
+        width: 304px;
+    }
+
+    #migration {
+        height: 966px;
+        margin: 0 16px 72px;
+    }
+
+    .textMigration {
+        flex-direction: column;
+        margin-bottom: 48px;
+    }
+
+    .headingMigration {
+        width: 344px;
+        height: 105px;
+        margin: 0;
+        padding: 0 16px;
+        margin-bottom: 24px;
+    }
+
+    .headingMigration h2 {
+        font-size: 32px;
+        line-height: 35.2px;
+        text-align: center;
+    }
+
+    .text {
+        width: 344px;
+        height: 143px;
+    }
+
+    .text p {
+        text-align: center;
+    }
+
+    .cardMigration {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        width: 344px;
+        height: 656px;
+        border-radius: 20px;
+    }
+
+    .infoMigration {
+        margin-left: 20px;
+    }
+
+    .advantages {
+        margin: 12px 0;
+    }
+
+    .point {
+        padding: 5px 8px;
+        border-radius: 6px;
+    }
+
+    .point p {
+        font-size: 12px;
+        line-height: 16.8px;
+    }
+
+    .list p {
+        font-size: 17px;
+        line-height: 23.8px;
+        margin-bottom: 12px;
+    }
+
+    .list li {
+        margin-bottom: 8px;
+        font-size: 15px;
+        line-height: 21px;
+        width: 290px;
+    }
+
+    .twoButton {
+        display: block;
+        margin-top: 24px;
+        padding: 0;
+        margin-bottom: 8px;
+    }
+
+    .applicationButton, .conditionsButton {
+        width: 304px;
+        height: 48px; 
+        padding: 11px 16px 13px;
+        margin-right: 0;
+        margin-bottom: 12px;
+        font-size: 17px;
+        line-height: 23.8px;
+    }
+
+    .illustrationMigration img {
+        width: 328px;
+        height: 245px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .illustrationMigration {
+        padding-top: 8px;
+        padding-bottom: 0;
+    }
+
+    #products {
+        margin: 0;
+        margin-bottom: 72px;
+        height: 1176px;
+        width: 376px;
+        padding: 0 16px;
+    }
+
+    .mainProducts {
+        margin: 0 16px 64px;
+        flex-direction: column;
+    }
+
+    .headingProducts {
+        width: 212px;
+        height: 46px;
+        margin-left: 48px;
+        margin-right: 46px;
+        margin-bottom: 24px;
+    }
+
+    .hedingTextProducts {
+        width: 300px;
+        height: 119px;
+    }
+
+    .headingProducts h2 {
+        font-size: 42px;
+        line-height: 46.2px;
+        text-align: center;
+    }
+    
+    .hedingTextProducts p {
+        font-size: 17px;
+        line-height: 23.8px;
+        text-align: center;
+    }
+
+    .cardProducts {
+        display: block;
+        margin-top: 0;
+        width: 344px;
+    }
+
+    .firstCardProducts {
+        display: block;
+        width: 344px;
+        height: 416px;
+        border-radius: 20px;
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+    .imgFirstCardProducts {
+        margin-right: 0;
+    }
+
+    .imgFirstCardProducts img {
+        width: 328px;
+        height: 245px;
+        background-color: #F6F7F9;
+    }
+
+    .infoFirstCardProducts {
+        padding-top: 12px;
+    }
+
+    .headingFirstCardProducts p {
+        font-size: 17px;
+        line-height: 23.8px;
+        text-align: left;
+        width: 256px;
+    }
+
+    .headingFirstCardProducts {
+        justify-content: left;
+        margin-left: 20px;
+    }
+
+    .textFirstCardProducts p {
+        font-size: 15px;
+        line-height: 21px;
+        margin-left: 20px;
+    }
+
+    .imgProuct {
+        width: 48px;
+        height: 48px;
+        padding: 10px; 
+    }
+
+    .secondCardProducts, .thirdCardProducts {
+        width: 344px;
+        height: 224px;
+        border-radius: 20px;
+        margin-right: 0;
+        padding: 20px 0;
+        margin-bottom: 8px;
+    }
+
+    .thirdCardProducts {
+        width: 344px;
+        height: 203px;
+        border-radius: 20px;
+        margin-right: 0;
+        padding: 20px 0;
+        margin-bottom: 8px;
+    }
+
+    .headingSecondCardProducts, .headingThirdCardProducts {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .textSecondCardProducts p, .textThirdCardProducts p {
+        font-size: 15px;
+        line-height: 21px;
+        text-align: center;  
+    }
+
+    .headingSecondCardProducts p, .headingThirdCardProducts p {
+        font-size: 17px;
+        line-height: 23.8px;
+        text-align: center;
+        margin-top: 16px;
+    }
+
+    .menuFooter br {
+        display: none;
+    }
+    
+    .headingSecondCardProducts p br, .headingThirdCardProducts p br {
+        display: none;
+    }
+
+    .pc {
+        display: none;
+    }
+
+   .mob {
+        display: block;
+   }
+
+   .showMoreProducts {
+        margin-top: 0;
+    }
+
+    .ShowMore {
+        width: 344px;
+        font-size: 20px;
+    }
+
+    .running_string {
+        margin-bottom: 16px;
+    }
+
+    footer {
+        width: 344px;
+        height: 1257.8px;
+        margin: 0 16px 13.2px;
+        border-radius: 20px;
+    }
+
+    .mainFooter {
+        display: block;
+        padding: 24px 20px 32px;
+    }
+
+    .menuFooter {
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 0;
+        margin: 0 20px;
+    }
+
+    .menuFooter p {
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 16px;
+    }
+
+    .menuFooter a {
+        font-size: 15px;
+        line-height: 22.5px;
+        margin-bottom: 8px;
+    }
+
+    .menuFooter div {
+        margin-bottom: 24px;
+    }
+
+    .hr {
+        padding: 32px 20px;
+        flex-direction: column;
+    }
+
+    
+
+    .iconfooter {
+        margin: 28px 110px 0 86px;
+        justify-content: space-between;
+    }
+
+    .iconfooter a {
+        height: 28px;
+    }
+
+
+    .iconfooter img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .footerFooter {
+        display: block;
+        padding: 0 20px 36px;
+        font-size: 15px;
+        line-height: 22.5px;
+        text-align: center;
+    }
+
+    .firstp {
+        margin-bottom: 16px;
+    }
+
+    .giftbtn {
+        width: 304px;
+        height: 23.8px;
+        background-color: inherit;
+        color: #07F;
+        font-size: 15px;
+        line-height: 22.5px;
+        padding: 0;
+    }
+
+    .logovkdark img {
+        width: 180.51px;
+        height: 40px;
+    }
+    
+    .btn {
+        margin-top: 24px;
+    }
+
+    .black {
+        display: none;
+    }
+    
+    .blue {
+        display: inline;
+    }
+
+    .icontext img {
+        margin-right: 6px;
+    }
+}

@@ -1,0 +1,89 @@
+name: Автоматические тесты
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+
+permissions:
+  checks: write
+  actions: read
+  contents: read
+  issues: write
+
+jobs:
+  test:
+    permissions: write-all
+    runs-on: [ubuntu-latest]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          version: 9
+          run_install: false
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: "pnpm"
+          cache-dependency-path: ".github/tests/pnpm-lock.yaml"
+      - name: Get installed Playwright version
+        id: playwright-version
+        run: echo "PLAYWRIGHT_VERSION=$(node -e "console.log(require('./.github/tests/package.json').devDependencies['@playwright/test'])")" >> $GITHUB_ENV
+      - name: Cache playwright binaries
+        uses: actions/cache@v3
+        id: playwright-cache
+        with:
+          path: |
+            ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-${{ env.PLAYWRIGHT_VERSION }}
+
+      - name: Install dependencies
+        run: "cd .github/tests && pnpm install"
+
+      - name: Run linters
+        id: run-lint
+        run: "cd .github/tests && pnpm run lint"
+
+      - name: Install Playwright Browsers
+        run: "cd .github/tests && pnpx playwright install --with-deps && pnpx playwright install-deps"
+        if: steps.playwright-cache.outputs.cache-hit != 'true'
+
+      - uses: actions/cache/save@v3
+        if: steps.playwright-cache.outputs.cache-hit != 'true'
+        with:
+          path: |
+            ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-${{ env.PLAYWRIGHT_VERSION }}
+
+      - name: Run tests
+        id: run-tests
+        run: "cd .github/tests && pnpm run test"
+
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: playwright-report
+          path: ./.github/tests/playwright-report/
+          retention-days: 30
+
+      - name: Comment PR
+        uses: actions/github-script@v7
+        if: always()
+        with:
+          script: |
+            console.log(context)
+            if (context.payload?.pull_request?.sender?.type !== 'Bot') {
+              await github.rest.issues.createComment({
+                issue_number: context.payload.number,
+                owner: 'polis-vk',
+                repo: context.payload.repository.name,
+                body: ("${{steps.run-tests.outcome}}" === "success" && "${{steps.run-lint.outcome}}" === "success" ? "✅ Тесты проходят ✅" : "‼️ Тесты не проходят ‼️\nЕсли это ошибка линтера вы можете посмотреть ошибки во вкладке \"Files changed\" наверху страницы.") +
+                `\n[Результат запуска тестов](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})`
+              })
+            }

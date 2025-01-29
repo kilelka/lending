@@ -1,0 +1,44 @@
+name: Обновить скриншоты
+
+on:
+  workflow_dispatch:
+
+permissions:
+  checks: write
+  actions: read
+  contents: write
+  issues: write
+
+jobs:
+  test:
+    permissions: write-all
+    runs-on: [ubuntu-latest]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          version: 9
+          run_install: false
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: "pnpm"
+          cache-dependency-path: ".github/tests/pnpm-lock.yaml"
+
+      - name: Install dependencies
+        run: "cd .github/tests && pnpm install"
+
+      - name: Install Playwright Browsers
+        run: "cd .github/tests && pnpx playwright install --with-deps"
+
+      - name: Update screenshots
+        id: run-tests
+        run: "cd .github/tests && pnpm run test --update-snapshots"
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        if: always()
